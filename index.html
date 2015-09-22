@@ -25,6 +25,12 @@
                 x.style.background = "#5cb85c";
             }
 
+            function restart() { 
+            	
+              alert('Are you sure you want to Restart ?'); 
+          	  location.reload();
+            }
+
 			window.onload = function() {
                     // tile width, in pixels
 				var tileSize = 100;
@@ -321,8 +327,10 @@
 		</script>
     </head>
     <body>
+    	<div class="container">
          <img src="logo.jpg" alt="Mindvalley" class="img">
               <h3>collect blocks till <strong>2048</strong></h3></br>
-         <button class="btn btn-success" onmouseover="darkImg(this)" onmouseout="normalImg(this)">Restart</button>
+         <button  class="btn btn-success" onmouseover="darkImg(this)" onmouseout="normalImg(this)" onclick="restart()">Restart</button>
+        </div>
     </body>
 </html>
