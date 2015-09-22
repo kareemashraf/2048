@@ -27,8 +27,9 @@
 
             function restart() { 
             	// show alert when the Restart button is clicked	
-              alert('Are you sure you want to Restart ?'); 
-          	  location.reload(); //Reload the page to restart the Game 
+			    if (confirm("Are you sure you want to Restart ?") == true) {
+			        location.reload(); //Reload the page to restart the Game 
+			    }
             }
 
 			window.onload = function() {
